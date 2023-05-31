@@ -1,4 +1,4 @@
-# Alulu - Search Filter Android App
+# Alulu - Stock Control Android App
 
 Alulu is an Android app that provides a search filter functionality for managing fittings. It allows users to easily filter and search information in an Excel-like format. The app includes three sections: Alucobon, Aluminium Profile, and No Stock. Users can add, edit, and store information locally without relying on cloud services.
 
