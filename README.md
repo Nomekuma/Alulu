@@ -1,28 +1,36 @@
-# Alulu - Stock Control Android App
+## Alulu - Stock control Android App
+### Design:
+![alulu (1)](https://github.com/Tushil-G/Alulu/assets/122863540/63a85982-b77f-437e-a339-f8274f0e8cd5)
 
-Alulu is an Android app that provides a search filter functionality for managing fittings. It allows users to easily filter and search information in an Excel-like format. The app includes three sections: Alucobon, Aluminium Profile, and No Stock. Users can add, edit, and store information locally without relying on cloud services.
+### Description:
 
-## Features
+This documentation outlines the requirements and features for the Alulu app, a stock inventory Android app.It will have four sections Aluminium fittings, Alucobon, Aluminium Profile, and accessories. The app will provide the ability to add, edit information locally without relying on cloud services.
 
-- Search Filter Functionality: Easily search and filter data within each section (Alucobon, Aluminium Profile, No Stock). Supports text-based search, category-based filtering, and column sorting.
-- Three Sections: Manage fittings in the Alucobon, Aluminium Profile, and No Stock sections.
-- Notification for No Stock Items: Receive notifications when a fitting in the "No Stock" section is added or modified.
-- Editable Fields: All fields in each section are editable, allowing easy updates and modifications.
-- Local Storage: Data is saved locally on the device, ensuring offline access and modifications.
-- Export and Import Functionality: Export data to a local file (e.g., CSV or Excel) for backup or sharing. Import data from a local file to restore or import existing information.
+### Technology:
 
-## Technical Requirements
+- Platform: Web | Android
+- Programming Language: Ionic | React Native
+- Database: localStorage | AsyncStorage
 
-- Platform: Android
-- Programming Language: JavaScript (using frameworks like React Native, Flutter, or Ionic)
-- Database: Local storage (e.g., SQLite or AsyncStorage)
-- User Interface: Intuitive and user-friendly design with a focus on usability and efficiency.
+### Features:
 
-## Installation
+1. Search Filter:
+   - Users can search and filter data within each sections
+2. Editable field:
+   - Allows users to add, edit, and manage information related to it
+3. Local Storage:
+   - The app will save data locally on the device, without relying on cloud services.
+4. Export and Import Functionality:
+   - Users can export the data to a local file (either CSV or Excel format) for backup or sharing purposes.
+   - The app will provide an import feature to allow users to restore or import data from a local file.
+5. Inventory
+   - Name
+   - Description
+   - Quantity
+   - Image (default image provided)
 
-1. Clone the repository: `git clone https://github.com/Tushil-G/alulu.git`
-2. Install the required dependencies: `npm install`
-3. Build and run the app on an Android device or emulator: `npm run android`
+### Optional features(wireframes)
+
 
 ## Contributing
 
