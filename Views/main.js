@@ -1,12 +1,32 @@
-/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidebar").style.width = "24.5em";
-    document.getElementById("main").style.marginLeft = "250px";
+
+//--------------darkmode-----------------//
+
+const inputEl = document.querySelector(".input");
+
+const bodyEl = document.querySelector("body");
+
+inputEl.checked = JSON.parse(localStorage.getItem("mode"));
+
+updateBody();
+
+function updateBody() {
+  if (inputEl.checked) {
+    bodyEl.style.background = "rgb(17, 17, 25)";
+    bodyEl.style.color = "white"
+  } else {
+    bodyEl.style.background = "white";
+    bodyEl.style.color = "rgb(17, 17, 25)"
   }
-  
-  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-  }
+}
+
+inputEl.addEventListener("input", () => {
+  updateBody();
+  updateLocalStorage();
+});
+
+function updateLocalStorage() {
+  localStorage.setItem("mode", JSON.stringify(inputEl.checked));
+}
+
+//--------------------------------//
 

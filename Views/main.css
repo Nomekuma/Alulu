@@ -3,7 +3,6 @@
       background-color: aqua;
       font-family: 'Poppins', sans-serif;
       padding: 10px;
-      color: black;
     }
     h1{
       display: flex;
@@ -16,62 +15,7 @@
     h1>img{
       margin-right: 10px;
     }
-    /* header{
-      display: flex;
-    } */
-    /* The sidebar menu */
-    .sidebar {
-      height: 100%; /* 100% Full-height */
-      width: 0; /* 0 width - change this with JavaScript */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Stay on top */
-      top: 0;
-      left: 0;
-      background-color: coral; /* Black*/
-      overflow-x: hidden; /* Disable horizontal scroll */
-      padding-top: 30px; /* Place content 60px from the top */
-      transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-      
-    }
 
-    /* The sidebar links */
-    .sidebar a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-
-      color: black;
-      display: block;
-      transition: 0.3s;
-      
-    }
-
-    /* Position and style the close button (top right corner) */
-    .sidebar .closebtn {
-      font-size: 20px;
-      display: flex;
-      justify-content: space-between;
-
-    }
-
-    /* The button used to open the sidebar */
-    .openbtn {
-      font-size: 20px;
-      cursor: pointer;
-      background-color: coral;
-      padding: 10px 15px;
-      border: none;
-    }
-
-    .getHr{
-      margin: 15px;
-      background-color: black;
-    }
-    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-    #main {
-      transition: margin-left .5s; /* If you want a transition effect */
-      padding: 20px;
-
-    }
 p{
   text-align: center;
   
@@ -138,19 +82,40 @@ p{
     grid-template-columns: repeat(1,minmax(0,1fr));
   }
   .bg-blue-600 , .bg-blue-700 {
-    background-color: chartreuse;
+    background-color: aqua;
   }
   .bg-blue-600:hover , .bg-blue-700:hover {
-    background-color: chartreuse;
+    background-color: aqua;
   }
   .group:hover .group-hover\:text-blue-600{
     color: rgb(17, 17, 25);
   }
   .text-gray-500{
-    color: rgb(17, 17, 25);
+    color: aqua;
   }
   .text-2xl{
     font-size: 20px;
   }
+  .bg-aqua{
+    background-color: aqua;
+  }
+  .gap-6{
+    padding: 20px;
+    gap: 1rem;
+  }
+  .color{
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .positionBtn{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .borderDotted{
+    height: 35em;
+  }
   }
