@@ -1,24 +1,19 @@
 import React from 'react';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import HomeScreen from '../screens/HomeScreen';
-import AluminiumProfile from '../screens/AluminiumProfileScreen';
-import AluminiumAlucobond from '../screens/AluminiumAlucobondScreen';
-import AluminiumFitting from '../screens/AluminiumFittingScreen';
-import Accessories from '../screens/AccessoriesScreen';
+import AluminiumProfileScreen from '../screens/AluminiumProfileScreen';
 
-const AppNavigator = createStackNavigator(
-  {
-    Home: { screen: HomeScreen },
-    AluminiumProfile: { screen: AluminiumProfile },
-    AluminiumAlucobond: { screen: AluminiumAlucobond },
-    AluminiumFitting: { screen: AluminiumFitting },
-    Accessories: { screen: Accessories },
-  },
-  {
-    initialRouteName: 'Home',
-  }
-);
+const Tab = createBottomTabNavigator();
 
-export default createAppContainer(AppNavigator);
+const AppNavigator = () => {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="AluminiumProfile" component={AluminiumProfileScreen} />
+      {/* Add more screens as needed */}
+    </Tab.Navigator>
+  );
+};
+
+export default AppNavigator;
