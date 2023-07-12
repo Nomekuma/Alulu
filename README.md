@@ -1,4 +1,4 @@
-## Alulu - Stock control Android App
+## Alulu - Stock control Android App (Not-complete)
 ### Design:
 ![alulu (1)](https://github.com/Tushil-G/Alulu/assets/122863540/63a85982-b77f-437e-a339-f8274f0e8cd5)
 
